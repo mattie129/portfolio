@@ -37,6 +37,7 @@
 
   .column {
     padding: 10px;
+    
   }
   
   
@@ -44,7 +45,7 @@
     margin: 10px;
     border: 2px solid #ccc;
     box-shadow: 0px 0px 5px #707070;
-    
+        
   }
   /*
   body {
@@ -59,6 +60,7 @@
   #gallery {
       position: relative;
       align-items: center;
+      
   }
 
   .image {
