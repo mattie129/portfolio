@@ -111,6 +111,7 @@ function preload ()
 
 function create ()
 {    
+    console.log("1");
     
     pause = false; //set to true to pause game for upgrade menu
 
@@ -120,6 +121,8 @@ function create ()
     let overlay = this.add.rectangle(0, 0, game.config.width, game.config.height, 0x000000, 0.5);
     overlay.setOrigin(0);
     overlay.setScale(info.scaleUp*2);
+    console.log("1");
+
 
     //player
     player = this.physics.add.sprite(info.tile, info.tile, 'player');
@@ -134,6 +137,7 @@ function create ()
     player.maxXp = xpRequirements[player.level-1];
 
     player.setCollideWorldBounds(true);
+    console.log("1");
 
     //player health bar
     //this.barBackground = this.add.sprite(100,100,'statBar');
@@ -147,7 +151,8 @@ function create ()
     
 
     //player xp bar
-    
+    console.log("1");
+   
 
     this.xpBarForeground = this.add.graphics();
     this.xpBarForeground.fillStyle(0x4bd1ff, 100);
@@ -170,6 +175,7 @@ function create ()
     this.cameras.main.setBounds(0,0,bg.displayWidth, bg.displayHeight);
     this.physics.world.setBounds(0, 0, bg.displayWidth, bg.displayHeight);
     this.cameras.main.startFollow(player);
+    console.log("1")
     
 
     
@@ -186,6 +192,7 @@ function create ()
 
 
     levelUp = false;
+    console.log("1");
 
 
     
@@ -209,6 +216,7 @@ function create ()
     xpGroup = this.physics.add.group({
 
     });
+    console.log("1");
 
     xpToAdd = {
         x : -1,
@@ -284,6 +292,9 @@ function create ()
             
         }
     })
+
+    console.log("1");
+
     
     
 
