@@ -1,4 +1,8 @@
-body{font-family:'Open Sans',serif;padding-top:54px;color:#868e96}@media (min-width:992px){body{padding-top:0;padding-left:17rem}}h1,h2,h3,h4,h5,h6{font-family:'Saira Extra Condensed',serif;font-weight:700;text-transform:uppercase;color:#e9ecef}h1{font-size:6rem;line-height:5.5rem}h2{font-size:3.5rem}.subheading{text-transform:uppercase;font-weight:500;font-family:'Saira Extra Condensed',serif;font-size:1.35rem}.list-social-icons a{color:#495057}.list-social-icons a:hover{color:#BE8CC5}.list-social-icons a .fa-lg{font-size:1.75rem}
+/*!
+ * Start Bootstrap - Resume v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */body{font-family:'Open Sans',serif;padding-top:54px;color:#868e96}@media (min-width:992px){body{padding-top:0;padding-left:17rem}}h1,h2,h3,h4,h5,h6{font-family:'Saira Extra Condensed',serif;font-weight:700;text-transform:uppercase;color:#e9ecef}h1{font-size:6rem;line-height:5.5rem}h2{font-size:3.5rem}.subheading{text-transform:uppercase;font-weight:500;font-family:'Saira Extra Condensed',serif;font-size:1.35rem}.list-social-icons a{color:#495057}.list-social-icons a:hover{color:#BE8CC5}.list-social-icons a .fa-lg{font-size:1.75rem}
  
  
  .list-icons{font-size:3rem;}.list-icons 
@@ -33,7 +37,7 @@ body{font-family:'Open Sans',serif;padding-top:54px;color:#868e96}@media (min-wi
 
   .column {
     padding: 10px;
-    
+    padding-top: 30px;
   }
   
   
@@ -41,7 +45,7 @@ body{font-family:'Open Sans',serif;padding-top:54px;color:#868e96}@media (min-wi
     margin: 10px;
     border: 2px solid #ccc;
     box-shadow: 0px 0px 5px #707070;
-        
+    
   }
   /*
   body {
@@ -53,48 +57,92 @@ body{font-family:'Open Sans',serif;padding-top:54px;color:#868e96}@media (min-wi
 } 
   */
 
-  #gallery {
-      position: relative;
-      align-items: center;
-      
+  .gallery {
+    position: relative;
+    max-width: 600px; 
+    margin: 0 auto;
   }
+
+  #gallery, #gallery2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;  
+  }
+  
 
   .image {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 58%;
-      max-width: 200px;
+      max-width: 100px;
       height: auto;
   }
-  #prev, #next {
-    cursor: pointer;
-    position: absolute;
+
+  #gallery2 .image {
+    max-width: 110px;
+    height: auto;
+  }
+
+
+
+  #nav, #nav2 {
+    text-align: center;
+    margin-top: 18px; 
+    margin-bottom: 20px; 
     
-    font-size: 11px;
-    color: #fff;
-    background-color: #333;
-    padding: 8px 12px;
+  }
+  
+
+#prev, #next {
+    margin: 0 10px; 
+    padding: 6px 12px; 
+    font-size: 12px; 
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     border: none;
-    border-radius: 4px;
-    outline: none;
-    z-index: 1; /* Add this line */
-  }
+    cursor: pointer;
+}
 
-  #prev { left: 10%;}
-  #next { right: 10%; }
 
-  #prev:hover, #next:hover {
-      background-color: #555;
-  }
+
+#prev:hover, #next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 
   #prev:active, #next:active {
       background-color: #777;
   }
 
-  #nav{
-    text-align: center;
-  }
+  #nav, #nav2 {
+    position: absolute;
+    top: 95%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+    right: 35%
+}
+#nav2 {
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
   
 
   
