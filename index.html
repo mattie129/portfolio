@@ -18,8 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     
     <script src="https://kit.fontawesome.com/20848415bb.js" crossorigin="anonymous"></script>
@@ -50,7 +49,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#academicprojects">Acacemic Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#academicprojects">Academic Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#personalprojects">Personal Projects</a>
@@ -111,14 +110,6 @@
               <i class="devicon-java-plain"></i>
               <span>Java</span>
             </li>
-            <li class="list-inline-item">
-              <i class="devicon-typescript-plain"></i>
-              <span>TypeScript</span>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-dart-plain"></i>
-              <span>Dart</span>
-            </li>
 
             <li class="list-inline-item">
               <i class="devicons devicons-javascript"></i>
@@ -149,23 +140,9 @@
               <span>.NET</span>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-numpy-plain"></i>
+              <i class="devicon-numpy-original"></i>
               <span>Numpy</span>
             </li> 
-            <li class="list-inline-item">
-              <i class="devicon-azuresqldatabase-plain"></i>
-              <span>SQL</span>
-            </li> 
-            <li class="list-inline-item">
-              <i class="devicon-angular-plain"></i>
-              <span>Angular</span>
-            </li> 
-
-            <li class="list-inline-item">
-              <i class="devicon-flutter-plain"></i>
-              <span>Flutter</span>
-            </li> 
-
 
             
             
@@ -194,12 +171,6 @@
               <i class="devicon-vscode-plain"></i>
               <span>Visual Studio Code</span>
             </li>
-
-            <li class="list-inline-item">
-              <i class="devicon-amazonwebservices-plain-wordmark"></i>
-              <span>AWS </span>
-            </li>
-
                        
             <li class="list-inline-item">
               <i class="devicon-photoshop-plain"></i>
@@ -250,7 +221,42 @@
             </div>
             
           </div>
-          
+          <div class="container">
+            <div class = "column">
+
+              <h3 class="mb-0">Easy Way Rental</h3>
+              <ul style="font-size: 1rem;" class="list-inline list-icons">
+    
+                
+
+    
+                <li class="list-inline-item">
+                  <i  style="font-size: 2rem;"   class="devicons devicons-swift"></i>
+                  <span>Swift</span>
+                </li>
+                
+                
+              </ul>
+              <!--<div class="subheading mb-3">JavaScript</div>-->
+              <p>Easy Way Rental is a mobile application demo that allows the user to select cars for rental. Users can create an account to access rentals. The app stores rental information and user account information on Firebase.</p>
+            </div>
+            <div class="gallery">
+              <div id="gallery2">
+                  <img src="img/carimg1.png" alt="Image 1" class="image">
+                  <img src="img/carimg2.png" alt="Image 2" class="image">
+                  <img src="img/carimg3.png" alt="Image 1" class="image">
+                  <img src="img/carimg4.png" alt="Image 2" class="image">
+                  <div id="nav2">
+                      <button id="prev">Back</button>
+                      <span class="counter">1/4</span>
+                      <button id="next">Next</button>
+                  </div>
+              </div>
+            </div>
+            
+          </div>
+
+
           
         </div>
       </section>
@@ -264,7 +270,7 @@
                 <div class="resume-content mr-auto">
 
                   <div class="container">
-                    <div style="padding-right: 165px;" class = "column">
+                    <div class = "column">
 
                       <h3 class="mb-0">iOS Game Application (Pixel Breaker)</h3>
                       <ul style="font-size: 1rem;" class="list-inline list-icons">
@@ -281,22 +287,20 @@
                       </ul>
                       <!--<div class="subheading mb-3">JavaScript</div>-->
                       <p>A game being developed for iOS using SpriteKit and SKPhysics (work in progress).</p>
-                      <p>The game is similar to brick breaker using 16x16 pixel sprites, currently with 250 levels.</p>
-                      
+                      <p>The game is similar to brick breaker (or breakout), using 16x16 pixel sprites, currently with 250 levels.</p>
                     </div>
-                    <div class = "column">
-
-                      <div id="gallery">
+                    <div class="gallery">
+                      <div id="gallery1">
                           <img src="img/pb1.png" alt="Image 1" class="image">
                           <img src="img/pb2.png" alt="Image 2" class="image">
                           <img src="img/pb3.png" alt="Image 3" class="image">
                           <img src="img/pb4.png" alt="Image 4" class="image">
                           <img src="img/pb5.png" alt="Image 5" class="image">
-                      
+                  
                           <div id="nav">
-                            <button id="prev" onclick="changeImage(-1)">Back</button>
-                            <span id="counter">1/5</span>
-                            <button id="next" onclick="changeImage(1)">Next</button>
+                              <button id="prev">Back</button>
+                              <span class="counter">1/5</span>
+                              <button id="next">Next</button>
                           </div>
                       </div>
                     </div>
@@ -304,10 +308,10 @@
 
 
 
-                  
+                  <!---->
                   <div class="container">
                     <div class ="column">
-                      <h3 class="mb-0"><u><a href="https://github.com/mattie129/Phaser-Horde-Survival">Phaser 2D Game Prototype</a></u></h3>
+                      <h3 class="mb-0"><u><a href="/portfolio/projects/PhaserHordeSurvival/game.html">Phaser 2D Game Prototype</a></u></h3>
                       <ul style="font-size: 1rem;" class="list-inline list-icons">
             
                         
@@ -322,7 +326,7 @@
                       </ul>
                       <!--<div class="subheading mb-3">JavaScript</div>-->
                       <p>2D horde survival game demo built using the Phaser framework on HTML5.</p>
-                      <p>Player is controlled by WASD keys. Enemies are spawned randomly and player attack speed will increase after leveling up. </p>
+                      <p>Player is controlled by WASD keys. Enemies are spawned randomly and player attack speed will increase after leveling up. Click the title above to play the demo.</p>
                   
                     </div>
                     <div class ="column">
